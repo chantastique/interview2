@@ -1,0 +1,1 @@
+function makePrompt(){var t=$.ajax({url:"../content.html",type:"GET",dataType:"html"});t.done(function(t){$("#question").html(t)}),t.fail(function(t,n){alert("RUH ROH: "+n)})}

@@ -1,0 +1,64 @@
+
+
+<script>
+var theThing = [ 
+	"If you could do it again, what would have you done differently?", 
+	"What\'s your super power?", "What attracted you to our company?", 
+	"What type of work do you want to be doing in 5 years?", 
+	"What would you consider an ideal client?", 
+	"How do you balance user goals and business goals?", 
+	"Why did you choose to include this project in your portfolio?", 
+	"What would you consider one of your failures?", 
+	"Why are you leaving your current position?", 
+	"What is your favourite object and why?", 
+	"Describe a time you lead a team.", 
+	"Describe a time you disagreed with the project manager.", 
+	"Describe a time where your feedback was not taken.", 
+	"Describe your design process.", 
+	"What\'s something you wish you could change about our product?", 
+	"How do you define UX and design?", 
+	"When is a design ready to ship?", 
+	"How do you form relationships with teammates?",
+	"How do you form relationships with stakeholders?", 
+	"Someone challenges your design decision. How do you handle it?", 
+	"Describe a time you disagreed with a design decision.", 
+	"Describe your experiences working with developers.", 
+	"How do you ensure that the dev team understands the design?", 
+	"How would you describe our brand?", 
+	"What makes a great work environment for you?", 
+	"How do you get feedback on your work?", 
+	"Choose a well known app and critique it.", 
+	"What are you looking for as the next step of your career?", 
+	"What\'s your motivation to work?", 
+	"How would you redesign the remote control?", 
+	"How would you redesign an ATM machine?", 
+	"What could our company do better?", 
+	"How would you design an alarm clock with only three buttons?", 
+	"How do you measure design quality?",
+	"What is your experience with HTML and CSS?",
+	"How do you price an entirely new invention?",
+	"What is the most motivational speech you\'ve seen?",
+	"Define good leadership.",
+	"Define good design.",
+	"What is your opinion on flat design?",
+	"What questions do you ask before starting a project?",
+	"Describe your research methods.",
+	"Describe a project that failed.",
+	"How do you deal with difficult clients?",
+	"A client offers feedback you disagree with; what do you do?",
+	"What is a brand you like and why?",
+	];
+
+// Fill in the blanks.
+$('#1theThing').html(theThing[Math.floor(Math.random() * theThing.length)]).fadeIn('normal');
+
+$('h1').each(function(){
+	var string = $(this).html();
+	string = string.replace(/ ([^ ]*)$/,'&nbsp;$1');
+	$(this).html(string);
+});
+
+</script>
+
+<h1 id="1theThing"></h1>
+			

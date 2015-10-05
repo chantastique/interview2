@@ -1,0 +1,46 @@
+!!! 5
+%head
+	%link(rel="stylesheet" type="text/css" href="css/reset.css")
+	%link(rel="stylesheet" type="text/css" href="css/style.css")
+	%link(rel="stylesheet" type="text/css" href="modal/src/featherlight.css")
+	%script{:src=>"https://use.typekit.net/dgj3cqb.js"}
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
+
+
+
+%body
+	.container
+		%section
+			.header
+				%span Practice Interview Questions for Designers
+			#question
+			%div.hvr-trim#againagain Next Question!
+			<a href="#" data-featherlight="#encourage">I need a peptalk.</a>
+		.bottom
+			Brought to you by <a href="http://twitter.com/chantastique" target="_blank">@chantastique</a>.
+
+	.lightbox#encourage 
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/5-sfG8BV8wU" frameborder="0" allowfullscreen></iframe>
+
+
+
+		
+	%script(src="/js/questions.js")
+	<script>
+	$( document ).ready(makePrompt);
+	$('#againagain').click(makePrompt);
+	</script>
+
+	<script src="//cdn.rawgit.com/noelboss/featherlight/1.3.4/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-31650757-3', 'auto');
+ga('send', 'pageview');
+
+</script>
