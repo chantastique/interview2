@@ -29,11 +29,10 @@ a:link, a:active, a:visited {
 
 .header {
   margin-top: 2rem; }
-
-.header span {
-  border-bottom: 2px #2b2b77 solid;
-  padding: 0.5rem 0 0.5rem 0;
-  text-align: left; }
+  .header span {
+    border-bottom: 2px #2b2b77 solid;
+    padding: 0.5rem 0 0.5rem 0;
+    text-align: left; }
 
 .bottom {
   position: absolute;
@@ -109,20 +108,21 @@ a:link, a:active, a:visited {
     width: 100%; }
 
   .header span {
-    padding: 0.5rem 0rem 0.5rem 0rem;
-    margin-left: 1rem; }
+    padding: 0 0 0.5rem 0;
+    margin: 1rem 0 0 2rem;
+    font-size: 0.9rem; }
 
   h1 {
-    margin: 4rem 2rem 0 2rem;
-    font: 2.6rem "livory", sans-serif; }
+    margin: 2rem 2rem 0 2rem;
+    font: 2.2rem "livory", sans-serif; }
 
   #againagain {
-    width: 99%;
-    position: absolute;
-    bottom: 0rem;
+    width: 300px;
+    display: block;
     font: 1.5rem "fira-sans", sans-serif;
     height: 4rem;
-    padding-top: 1.5rem; }
+    padding-top: 1.5rem;
+    margin-left: 2rem; }
 
   section a, .bottom {
     display: none; } }

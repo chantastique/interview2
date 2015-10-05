@@ -54,11 +54,17 @@ var theThing = [
 // Fill in the blanks.
 $('#1theThing').html(theThing[Math.floor(Math.random() * theThing.length)]).fadeIn('normal');
 
-$('h1').each(function(){
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	console.log("mobile");
+}else
+{
+	$('h1').each(function(){
 	var string = $(this).html();
 	string = string.replace(/ ([^ ]*)$/,'&nbsp;$1');
 	$(this).html(string);
 });
+}
+
 
 </script>
 
